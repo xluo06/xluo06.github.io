@@ -40,12 +40,13 @@ header h3 {
 
 /* Menu Bar Styles */
 .menu-bar {
-    background-color: #333;
-    padding: 15px 0;
+    background-color: #2d2d2d;
+    padding: 14px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .menu-bar-inner {
@@ -55,36 +56,57 @@ header h3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 16px 24px;
+    gap: 0 4px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.menu-bar ul {
+.menu-bar-links {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;
+    gap: 8px 28px;
     margin: 0;
     padding: 0;
 }
 
+.menu-bar-divider {
+    width: 1px;
+    height: 1.15em;
+    background: rgba(255, 255, 255, 0.28);
+    margin: 0 6px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+/* Match link styling: no default button chrome (also duplicated inline in index.html). */
 .lang-toggle {
-    font-family: inherit;
-    font-size: 15px;
-    padding: 8px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    border: none;
     background: transparent;
     color: #fff;
+    font: inherit;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 10px 16px;
     cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    border-radius: 4px;
+    transition: color 0.25s ease, background 0.2s ease;
     white-space: nowrap;
 }
 
 .lang-toggle:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: #0078D4;
-    color: #0078D4;
+    color: #0078d4;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.lang-toggle:focus-visible {
+    outline: 2px solid #0078d4;
+    outline-offset: 2px;
 }
 
 /* i18n visibility: duplicated in index.html <style> so the site works if this file fails to load */
@@ -433,8 +455,22 @@ footer {
         left: 10px !important;
     }
     
-    .menu-bar ul {
+    .menu-bar-inner {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 16px 14px;
+    }
+
+    .menu-bar-links {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .menu-bar-divider {
+        display: none;
+    }
+
+    .lang-toggle {
+        padding: 8px 16px 10px;
     }
 }
