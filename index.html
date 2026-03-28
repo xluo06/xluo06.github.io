@@ -11,62 +11,86 @@
         <!-- Header Section -->
         <header>
             <div class="hero">
-                <h1>Hello I'm <span>XINHUI LUO</span></h1>
-                <h3>Master of Data Science</h3>
+                <h1>
+                    <span class="i18n-en">Hello I'm </span>
+                    <span class="i18n-zh">你好，我是 </span>
+                    <span>XINHUI LUO</span>
+                </h1>
+                <h3>
+                    <span class="i18n-en">Master of Data Science</span>
+                    <span class="i18n-zh">数据科学硕士</span>
+                </h3>
             </div>
         </header>
         
         <nav class="menu-bar">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience-timeline">Past Experience & Projects</a></li>
-            </ul>
+            <div class="menu-bar-inner">
+                <ul>
+                    <li><a href="#about"><span class="i18n-en">About</span><span class="i18n-zh">关于</span></a></li>
+                    <li><a href="#education"><span class="i18n-en">Education</span><span class="i18n-zh">教育背景</span></a></li>
+                    <li><a href="#skills"><span class="i18n-en">Skills</span><span class="i18n-zh">技能</span></a></li>
+                    <li><a href="#experience-timeline"><span class="i18n-en">Past Experience &amp; Projects</span><span class="i18n-zh">经历与项目</span></a></li>
+                </ul>
+                <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Switch to Chinese">中文</button>
+            </div>
         </nav>
 
         <!-- About Section -->
         <section id="about">
             <div class="about-container flex-container">
                 <div class="about-text">
-                    <h2>About Xinhui Luo</h2>
-                    <p>
+                    <h2 class="i18n-en">About Xinhui Luo</h2>
+                    <h2 class="i18n-zh">关于骆心晖</h2>
+                    <p class="i18n-en">
                         I am a Data Science master’s student with hands-on experience in data analysis, statistical modeling, and
                         machine learning using Python, SQL, and scikit-learn. Experienced in building ETL pipelines, performing
                         exploratory data analysis (EDA), and developing regression and classification models to analyze large,
                         multi-source datasets. Proven ability to translate complex analytical results into actionable business insights and
-                        support data-driven decision-making across technology and financial domains. 
+                        support data-driven decision-making across technology and financial domains.
                     </p>
-                    <a href="Xinhui_Resume_DS.pdf" class="btn" download>Download Resume</a>
+                    <p class="i18n-zh">
+                        我是一名数据科学硕士在读生，具备使用 Python、SQL 与 scikit-learn 进行数据分析、统计建模与机器学习的实践经验。
+                        熟悉搭建 ETL 流程、开展探索性数据分析（EDA），并构建回归与分类模型以分析大规模多源数据。
+                        能够将复杂的分析结果转化为可落地的商业洞察，并在科技与金融科技领域支持数据驱动决策。
+                    </p>
+                    <a href="Xinhui_Resume_DS.pdf" class="btn" download><span class="i18n-en">Download Resume</span><span class="i18n-zh">下载简历</span></a>
                 </div>
                 <div class="about-image">
-                    <img src="images/graduation.jpg" alt="Graduation Image">
+                    <img src="images/graduation.jpg" alt="Xinhui Luo">
                 </div>
             </div>
         </section>    
 
         <!-- Education Section -->
         <section id="education">
-            <h2>Education</h2>
+            <h2 class="i18n-en">Education</h2>
+            <h2 class="i18n-zh">教育背景</h2>
             <div class="education-container">
                 <div class="education-item">
                     <h3>Tufts University</h3>
-                    <p class="degree">Master of Science in Data Science</p>
-                    <p class="date">Expected Graduation: May 2026 | GPA: 3.8</p>
-                    <p class="courses"><strong>Relevant Courses:</strong> Probability Theory, Statistics, Big Data, Machine Learning, Visual Analytics, Human-Computer Interaction, Data Science for Sustainability, Artificial Intelligence, Geographical Information System</p>
+                    <p class="degree i18n-en">Master of Science in Data Science</p>
+                    <p class="degree i18n-zh">数据科学理学硕士</p>
+                    <p class="date i18n-en">Expected Graduation: May 2026 | GPA: 3.8</p>
+                    <p class="date i18n-zh">预计毕业：2026 年 5 月 | GPA：3.8</p>
+                    <p class="courses i18n-en"><strong>Relevant Courses:</strong> Probability Theory, Statistics, Big Data, Machine Learning, Visual Analytics, Human-Computer Interaction, Data Science for Sustainability, Artificial Intelligence, Geographical Information System, Data Base Systems</p>
+                    <p class="courses i18n-zh"><strong>相关课程：</strong>概率论、统计学、大数据、机器学习、可视分析、人机交互、可持续数据科学、人工智能、地理信息系统、数据库系统</p>
                 </div>
                 <div class="education-item">
                     <h3>University of California, Davis</h3>
-                    <p class="degree">Bachelor of Science in Statistics (Data Science Track)</p>
-                    <p class="date">2019 to 2023 | GPA: 3.6</p>
-                    <p class="courses"><strong>Relevant Courses:</strong> Linear Regression, ANOVA, Applied Time Series Analysis, Probability Theory, Data Science, Applied Linear Algebra, Calculus, Multivariate Data Analysis, Data and Society, Statistical Data Technologies, Nonparametric Statistics, Statistical Learning, Advanced Statistical Computing, Categorical Data Analysis</p>
+                    <p class="degree i18n-en">Bachelor of Science in Statistics (Data Science Track)</p>
+                    <p class="degree i18n-zh">统计学理学学士（数据科学方向）</p>
+                    <p class="date i18n-en">2019 to 2023 | GPA: 3.6</p>
+                    <p class="date i18n-zh">2019–2023 | GPA：3.6</p>
+                    <p class="courses i18n-en"><strong>Relevant Courses:</strong> Linear Regression, ANOVA, Applied Time Series Analysis, Probability Theory, Data Science, Applied Linear Algebra, Calculus, Multivariate Data Analysis, Data and Society, Statistical Data Technologies, Nonparametric Statistics, Statistical Learning, Advanced Statistical Computing, Categorical Data Analysis</p>
+                    <p class="courses i18n-zh"><strong>相关课程：</strong>线性回归、方差分析、应用时间序列分析、概率论、数据科学、应用线性代数、微积分、多元数据分析、数据与社会、统计信息技术、非参数统计、统计学习、高级统计计算、分类数据分析</p>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills">
-            <h2>Skills and Tools</h2>
+            <h2 class="i18n-en">Skills and Tools</h2>
+            <h2 class="i18n-zh">技能与工具</h2>
             <div class="skills-container">
                 <div class="skill-item">
                     <img src="images/python-logo.png" alt="Python">
@@ -74,7 +98,7 @@
                 </div>
                 <div class="skill-item">
                     <img src="images/jupyter-logo.png" alt="Jupyter Notebook">
-                    <p>Jupyter Notebook</p>
+                    <p><span class="i18n-en">Jupyter Notebook</span><span class="i18n-zh">Jupyter Notebook</span></p>
                 </div>
                 <div class="skill-item">
                     <img src="images/sql-logo.png" alt="SQL">
@@ -86,7 +110,7 @@
                 </div>
                 <div class="skill-item">
                     <img src="images/machine-learning-logo.png" alt="Machine Learning">
-                    <p>Machine Learning</p>
+                    <p><span class="i18n-en">Machine Learning</span><span class="i18n-zh">机器学习</span></p>
                 </div>
                 <div class="skill-item">
                     <img src="images/gis.jpg" alt="ArcGIS Pro">
@@ -96,7 +120,8 @@
         </section>
 
         <section id="experience-timeline">
-            <h2>Experience & Projects</h2>
+            <h2 class="i18n-en">Experience &amp; Projects</h2>
+            <h2 class="i18n-zh">经历与项目</h2>
             <div class="timeline">
                 <div class="timeline-line left-line"></div>
                 <div class="timeline-line right-line"></div>
@@ -105,18 +130,24 @@
                 <div class="timeline-row">
                     <div class="timeline-item left">
                         <div class="timeline-content">
-                            <h3>Peti </h3>
-                            <p>AI Prompt Engineer Intern</p>
-                            <p class="date">Dec 2025 - Present</p>
-                            <p>Chicago, IL</p>
+                            <h3>Peti</h3>
+                            <p class="i18n-en">AI Prompt Engineer Intern</p>
+                            <p class="i18n-zh">AI 提示工程实习生</p>
+                            <p class="date i18n-en">Dec 2025 - Present</p>
+                            <p class="date i18n-zh">2025 年 12 月 – 至今</p>
+                            <p class="i18n-en">Chicago, IL</p>
+                            <p class="i18n-zh">美国伊利诺伊州芝加哥</p>
                         </div>
                     </div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>GIS Wind Farm Suitability Analysis</h3>
-                            <p class="date">Dec. 2025</p>
-                            <p>A comprehensive GIS analysis identifying optimal locations for wind farm development using spatial data and suitability modeling.</p>
-                            <a href="https://storymaps.arcgis.com/stories/ff8e06d9c0394d2d8305b3755ee1cca7" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">GIS Wind Farm Suitability Analysis</h3>
+                            <h3 class="i18n-zh">GIS 风电场选址适宜性分析</h3>
+                            <p class="date i18n-en">Dec. 2025</p>
+                            <p class="date i18n-zh">2025 年 12 月</p>
+                            <p class="i18n-en">A comprehensive GIS analysis identifying optimal locations for wind farm development using spatial data and suitability modeling.</p>
+                            <p class="i18n-zh">基于空间数据与适宜性建模的综合 GIS 分析，识别风电开发的最优区位。</p>
+                            <a href="https://storymaps.arcgis.com/stories/ff8e06d9c0394d2d8305b3755ee1cca7" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -126,18 +157,23 @@
                     <div class="timeline-item left">
                         <div class="timeline-content">
                             <h3>Digital Jinhua Technology Operation Co., Ltd</h3>
-                            <p>Data Development Engineer Intern</p>
-                            <p class="date">June 2024 - Aug. 2024</p>
-                            <p>Jinhua, China</p>
-                            
+                            <p class="i18n-en">Data Development Engineer Intern</p>
+                            <p class="i18n-zh">数据开发工程师实习生</p>
+                            <p class="date i18n-en">June 2024 - Aug. 2024</p>
+                            <p class="date i18n-zh">2024 年 6 月 – 2024 年 8 月</p>
+                            <p class="i18n-en">Jinhua, China</p>
+                            <p class="i18n-zh">中国金华</p>
                         </div>
                     </div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>Energy Curtailment Analysis Using Regression Modeling</h3>
-                            <p class="date">Nov. 2025</p>
-                            <p>Regression modeling analysis of energy curtailment patterns to optimize renewable energy grid integration.</p>
-                            <a href="https://github.com/xluo06/GreenH2/blob/main/Policy_Memo.pdf" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">Energy Curtailment Analysis Using Regression Modeling</h3>
+                            <h3 class="i18n-zh">基于回归建模的能源弃电分析</h3>
+                            <p class="date i18n-en">Nov. 2025</p>
+                            <p class="date i18n-zh">2025 年 11 月</p>
+                            <p class="i18n-en">Regression modeling analysis of energy curtailment patterns to optimize renewable energy grid integration.</p>
+                            <p class="i18n-zh">对能源弃电模式进行回归建模分析，以优化可再生能源并网。</p>
+                            <a href="https://github.com/xluo06/GreenH2/blob/main/Policy_Memo.pdf" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -147,18 +183,23 @@
                     <div class="timeline-item left">
                         <div class="timeline-content">
                             <h3>Industrial And Commercial Bank of China, Jinhua Branch</h3>
-                            <p>Planning and Financial Department Intern</p>
-                            <p class="date">May 2024 - June 2024</p>
-                            <p>Jinhua, China</p>
-                            
+                            <p class="i18n-en">Planning and Financial Department Intern</p>
+                            <p class="i18n-zh">计划财务部实习生</p>
+                            <p class="date i18n-en">May 2024 - June 2024</p>
+                            <p class="date i18n-zh">2024 年 5 月 – 2024 年 6 月</p>
+                            <p class="i18n-en">Jinhua, China</p>
+                            <p class="i18n-zh">中国金华</p>
                         </div>
                     </div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>FireScape: A Data-Driven Approach to Fire-Resilient Tree Planting in Los Angeles</h3>
-                            <p class="date">April - June 2025</p>
-                            <p>A data-driven approach for selecting fire-resilient tree species to plant in Los Angeles to mitigate wildfire risk.</p>
-                            <a href="iasc2025-poster1.pdf" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">FireScape: A Data-Driven Approach to Fire-Resilient Tree Planting in Los Angeles</h3>
+                            <h3 class="i18n-zh">FireScape：面向洛杉矶耐火树种栽植的数据驱动方法</h3>
+                            <p class="date i18n-en">April - June 2025</p>
+                            <p class="date i18n-zh">2025 年 4 月 – 6 月</p>
+                            <p class="i18n-en">A data-driven approach for selecting fire-resilient tree species to plant in Los Angeles to mitigate wildfire risk.</p>
+                            <p class="i18n-zh">以数据驱动方式选择耐火树种，在洛杉矶栽植以降低野火风险。</p>
+                            <a href="iasc2025-poster1.pdf" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -168,17 +209,23 @@
                     <div class="timeline-item left">
                         <div class="timeline-content">
                             <h3>Zhejiang Yingyang Asset Management Co. LTD</h3>
-                            <p>Quantitative Researcher Intern</p>
-                            <p class="date">Jul. 2021 - Oct. 2021</p>
-                            <p>Hangzhou, China</p>
+                            <p class="i18n-en">Quantitative Researcher Intern</p>
+                            <p class="i18n-zh">量化研究实习生</p>
+                            <p class="date i18n-en">Jul. 2021 - Oct. 2021</p>
+                            <p class="date i18n-zh">2021 年 7 月 – 2021 年 10 月</p>
+                            <p class="i18n-en">Hangzhou, China</p>
+                            <p class="i18n-zh">中国杭州</p>
                         </div>
                     </div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>News Bias Detection System</h3>
-                            <p class="date">April - May 2025</p>
-                            <p>A system designed to detect and analyze bias in news articles using advanced NLP techniques.</p>
-                            <a href="https://github.com/jordanzhuy/cs178-final-VAST2021/tree/main" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">News Bias Detection System</h3>
+                            <h3 class="i18n-zh">新闻偏见检测系统</h3>
+                            <p class="date i18n-en">April - May 2025</p>
+                            <p class="date i18n-zh">2025 年 4 月 – 5 月</p>
+                            <p class="i18n-en">A system designed to detect and analyze bias in news articles using advanced NLP techniques.</p>
+                            <p class="i18n-zh">利用自然语言处理技术检测并分析新闻报道中的偏见。</p>
+                            <a href="https://github.com/jordanzhuy/cs178-final-VAST2021/tree/main" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -188,10 +235,13 @@
                     <div class="timeline-item left empty"></div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>Visual Analytics System for Student Placement Analysis</h3>
-                            <p class="date">Feb - March 2025</p>
-                            <p>An interactive system that predicts and visualizes student placement outcomes using data analytics.</p>
-                            <a href="https://github.com/Daisyxjh-06/cs178_mid" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">Visual Analytics System for Student Placement Analysis</h3>
+                            <h3 class="i18n-zh">学生去向分析可视分析系统</h3>
+                            <p class="date i18n-en">Feb - March 2025</p>
+                            <p class="date i18n-zh">2025 年 2 月 – 3 月</p>
+                            <p class="i18n-en">An interactive system that predicts and visualizes student placement outcomes using data analytics.</p>
+                            <p class="i18n-zh">交互式系统，利用数据分析预测并可视化学生去向结果。</p>
+                            <a href="https://github.com/Daisyxjh-06/cs178_mid" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -201,10 +251,13 @@
                     <div class="timeline-item left empty"></div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>Unveiling Color Dynamics of "Shot Marilyns"</h3>
-                            <p class="date">August - Sep 2024</p>
-                            <p>A comprehensive study analyzing the visual variations and perception of Andy Warhol's iconic artwork.</p>
-                            <a href="https://shotmarilyns.gd.edu.kg/?_gl=1*11o5fu8*_ga*OTY1NTkwMjY2LjE3NDQzODk0Njc.*_ga_ELSZ3SFQ2D*czE3NDY4MTAwOTEkbzEwJGcxJHQxNzQ2ODEzMTUwJGowJGwwJGgw" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">Unveiling Color Dynamics of "Shot Marilyns"</h3>
+                            <h3 class="i18n-zh">揭示《枪击玛丽莲》的色彩动态</h3>
+                            <p class="date i18n-en">August - Sep 2024</p>
+                            <p class="date i18n-zh">2024 年 8 月 – 9 月</p>
+                            <p class="i18n-en">A comprehensive study analyzing the visual variations and perception of Andy Warhol's iconic artwork.</p>
+                            <p class="i18n-zh">综合研究安迪·沃霍尔标志性作品的视觉变化与观感。</p>
+                            <a href="https://shotmarilyns.gd.edu.kg/?_gl=1*11o5fu8*_ga*OTY1NTkwMjY2LjE3NDQzODk0Njc.*_ga_ELSZ3SFQ2D*czE3NDY4MTAwOTEkbzEwJGcxJHQxNzQ2ODEzMTUwJGowJGwwJGgw" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -214,10 +267,13 @@
                     <div class="timeline-item left empty"></div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>Analysis of Heart Disease-Related Dataset</h3>
-                            <p class="date">May 2023</p>
-                            <p>Statistical analysis and insights from heart disease data to identify risk factors and patterns.</p>
-                            <a href="https://github.com/xluo06/heart-stroke-risk-analysis/blob/main/Report.pdf" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">Analysis of Heart Disease-Related Dataset</h3>
+                            <h3 class="i18n-zh">心脏病相关数据集分析</h3>
+                            <p class="date i18n-en">May 2023</p>
+                            <p class="date i18n-zh">2023 年 5 月</p>
+                            <p class="i18n-en">Statistical analysis and insights from heart disease data to identify risk factors and patterns.</p>
+                            <p class="i18n-zh">对心脏病数据进行统计分析，识别风险因素与模式。</p>
+                            <a href="https://github.com/xluo06/heart-stroke-risk-analysis/blob/main/Report.pdf" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -227,10 +283,13 @@
                     <div class="timeline-item left empty"></div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>Optimization Techniques for Logistic Regression</h3>
-                            <p class="date">February 2023</p>
-                            <p>Comparative study of various optimization methods for logistic regression models.</p>
-                            <a href="https://github.com/xluo06/Logistic-Regression-Optimization/blob/main/Report.pdf" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">Optimization Techniques for Logistic Regression</h3>
+                            <h3 class="i18n-zh">逻辑回归的优化方法</h3>
+                            <p class="date i18n-en">February 2023</p>
+                            <p class="date i18n-zh">2023 年 2 月</p>
+                            <p class="i18n-en">Comparative study of various optimization methods for logistic regression models.</p>
+                            <p class="i18n-zh">对逻辑回归模型多种优化方法的比较研究。</p>
+                            <a href="https://github.com/xluo06/Logistic-Regression-Optimization/blob/main/Report.pdf" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -240,10 +299,13 @@
                     <div class="timeline-item left empty"></div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>Contributions to Type II Diabetes</h3>
-                            <p class="date">Nov - Dec 2022</p>
-                            <p>Research analysis on factors contributing to Type II Diabetes development.</p>
-                            <a href="https://github.com/xluo06/Contributions-to-Type-II-Diabetes/blob/main/Contributions%20to%20Type%20II%20Diabetes.pdf" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">Contributions to Type II Diabetes</h3>
+                            <h3 class="i18n-zh">II 型糖尿病影响因素研究</h3>
+                            <p class="date i18n-en">Nov - Dec 2022</p>
+                            <p class="date i18n-zh">2022 年 11 月 – 12 月</p>
+                            <p class="i18n-en">Research analysis on factors contributing to Type II Diabetes development.</p>
+                            <p class="i18n-zh">分析导致 II 型糖尿病发生的相关因素。</p>
+                            <a href="https://github.com/xluo06/Contributions-to-Type-II-Diabetes/blob/main/Contributions%20to%20Type%20II%20Diabetes.pdf" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -253,10 +315,13 @@
                     <div class="timeline-item left empty"></div>
                     <div class="timeline-item right">
                         <div class="timeline-content">
-                            <h3>Analysis of Graduation Rate</h3>
-                            <p class="date">Aug 2022</p>
-                            <p>Statistical analysis of factors affecting graduation rates in educational institutions.</p>
-                            <a href="https://github.com/xluo06/Graduation-Rate-Analysis/blob/main/Graduation-Rate-Analysis.pdf" class="project-link" target="_blank">View Project</a>
+                            <h3 class="i18n-en">Analysis of Graduation Rate</h3>
+                            <h3 class="i18n-zh">毕业率分析</h3>
+                            <p class="date i18n-en">Aug 2022</p>
+                            <p class="date i18n-zh">2022 年 8 月</p>
+                            <p class="i18n-en">Statistical analysis of factors affecting graduation rates in educational institutions.</p>
+                            <p class="i18n-zh">统计分析影响教育机构毕业率的各项因素。</p>
+                            <a href="https://github.com/xluo06/Graduation-Rate-Analysis/blob/main/Graduation-Rate-Analysis.pdf" class="project-link" target="_blank"><span class="i18n-en">View Project</span><span class="i18n-zh">查看项目</span></a>
                         </div>
                     </div>
                 </div>
@@ -266,10 +331,60 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Xinhui Luo. All Rights Reserved.</p>
+        <p class="i18n-en">&copy; 2024 Xinhui Luo. All Rights Reserved.</p>
+        <p class="i18n-zh">&copy; 2024 骆心晖。保留所有权利。</p>
     </footer>
 
     <script>
+        (function () {
+            var STORAGE_KEY = 'portfolio-lang';
+            var html = document.documentElement;
+            var btn = document.getElementById('lang-toggle');
+
+            function setLang(lang) {
+                if (lang === 'zh-CN') {
+                    html.setAttribute('lang', 'zh-CN');
+                    html.setAttribute('dir', 'ltr');
+                    document.title = '作品集 - 骆心晖';
+                    if (btn) {
+                        btn.textContent = 'English';
+                        btn.setAttribute('aria-label', 'Switch to English');
+                    }
+                } else {
+                    html.setAttribute('lang', 'en');
+                    document.title = 'Portfolio - Xinhui Luo';
+                    if (btn) {
+                        btn.textContent = '中文';
+                        btn.setAttribute('aria-label', 'Switch to Chinese');
+                    }
+                }
+                try {
+                    localStorage.setItem(STORAGE_KEY, lang === 'zh-CN' ? 'zh' : 'en');
+                } catch (e) { /* ignore */ }
+            }
+
+            function initLang() {
+                var stored = null;
+                try {
+                    stored = localStorage.getItem(STORAGE_KEY);
+                } catch (e) { /* ignore */ }
+                if (stored === 'zh') {
+                    setLang('zh-CN');
+                } else {
+                    setLang('en');
+                }
+            }
+
+            initLang();
+
+            if (btn) {
+                btn.addEventListener('click', function () {
+                    var isZh = html.getAttribute('lang') === 'zh-CN';
+                    setLang(isZh ? 'en' : 'zh-CN');
+                });
+            }
+        })();
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
