@@ -87,15 +87,16 @@ header h3 {
     color: #0078D4;
 }
 
-html[lang="en"] .i18n-zh {
+/* i18n visibility: duplicated in index.html <style> so the site works if this file fails to load */
+html.site-lang-en .i18n-zh {
     display: none !important;
 }
 
-html[lang="zh-CN"] .i18n-en {
+html.site-lang-zh .i18n-en {
     display: none !important;
 }
 
-html[lang="zh-CN"] body {
+html.site-lang-zh body {
     font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif;
 }
 
