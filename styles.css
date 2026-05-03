@@ -372,6 +372,7 @@ footer {
 .timeline-row {
     position: relative;
     display: flex;
+    align-items: flex-start;
     width: 100%;
     margin-bottom: 40px;
     min-height: 120px;
@@ -438,11 +439,19 @@ footer {
     .projects-container {
         grid-template-columns: 1fr;
     }
-    
+
+    .timeline-row {
+        display: block;
+    }
+
     .timeline-line {
         left: 20px;
     }
-    
+
+    .timeline-line.right-line {
+        display: none;
+    }
+
     .timeline-item {
         width: 100%;
         left: 0 !important;
@@ -454,7 +463,11 @@ footer {
     .timeline-item::before {
         left: 10px !important;
     }
-    
+
+    .timeline-item.empty {
+        display: none;
+    }
+
     .menu-bar-inner {
         flex-direction: column;
         gap: 12px;
