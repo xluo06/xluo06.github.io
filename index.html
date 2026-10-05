@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xinhui Luo portfolio: data science, analytics, GIS, machine learning, and visual analytics work.">
-    <title>Portfolio - Xinhui Luo</title>
+    <meta name="description" content="Xinhui Luo portfolio: station operations, data science, analytics, GIS, machine learning, and visual analytics work.">
+    <meta name="keywords" content="Xinhui Luo, station operations, operations analytics, data science, Python, SQL, Snowflake, machine learning, GIS, Tableau, AI apps">
+    <meta property="og:title" content="Xinhui Luo | Operations Analytics Portfolio">
+    <meta property="og:description" content="Station operations, data science, analytics, GIS, machine learning, and visual analytics work by Xinhui Luo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://git.xhluo.gd.edu.kg/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Xinhui Luo | Operations Analytics Portfolio">
+    <meta name="twitter:description" content="Station operations, data science, analytics, GIS, machine learning, and visual analytics work by Xinhui Luo.">
+    <link rel="canonical" href="https://git.xhluo.gd.edu.kg/">
+    <title>Xinhui Luo | Operations Analytics Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -15,6 +24,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="cursor-glow" aria-hidden="true"></div>
 
     <nav class="floating-nav" aria-label="Primary navigation">
@@ -23,34 +33,36 @@
         <a href="#projects" class="nav-link"><span class="i18n-en">Projects</span><span class="i18n-zh">项目</span></a>
         <a href="#timeline" class="nav-link"><span class="i18n-en">Timeline</span><span class="i18n-zh">时间线</span></a>
         <a href="#skills" class="nav-link"><span class="i18n-en">Skills</span><span class="i18n-zh">技能</span></a>
+        <a href="#contact" class="nav-link"><span class="i18n-en">Contact</span><span class="i18n-zh">联系</span></a>
         <button type="button" id="theme-toggle" class="icon-button magnetic" aria-label="Switch color theme">◐</button>
         <button type="button" id="lang-toggle" class="pill-button magnetic" aria-label="Switch to Chinese">中文</button>
     </nav>
 
-    <main>
+    <main id="main-content">
         <header id="home" class="hero section-band dark-band">
             <canvas id="hero-particles" aria-hidden="true"></canvas>
             <div class="hero-grid" aria-hidden="true"></div>
             <div class="hero-content reveal">
-                <p class="eyebrow">Data Science Portfolio</p>
+                <p class="eyebrow">Operations Analytics Portfolio</p>
                 <h1>Xinhui Luo</h1>
                 <p class="hero-role">
-                    <span class="i18n-en">Data Scientist focused on analytics systems, machine learning, and decision-ready visual stories.</span>
-                    <span class="i18n-zh">专注于分析系统、机器学习与可视化决策叙事的数据科学家。</span>
+                    <span class="i18n-en">Station Operations Specialist at Gofo, applying data science, machine learning, and visual analytics to practical operating decisions.</span>
+                    <span class="i18n-zh">Gofo 站点运营专员，将数据科学、机器学习与可视分析应用于实际运营决策。</span>
                 </p>
                 <div class="hero-actions">
-                    <a href="#featured" class="btn primary magnetic"><span class="i18n-en">View Featured Work</span><span class="i18n-zh">查看精选项目</span></a>
+                    <a href="#featured" class="btn primary magnetic"><span class="i18n-en">View Operations &amp; Analytics Work</span><span class="i18n-zh">查看运营与分析项目</span></a>
+                    <a href="#contact" class="btn secondary magnetic"><span class="i18n-en">Contact Me</span><span class="i18n-zh">联系我</span></a>
                     <a href="Xinhui_Resume_DS.pdf" class="btn secondary magnetic" download><span class="i18n-en">Download Resume</span><span class="i18n-zh">下载简历</span></a>
                 </div>
             </div>
             <aside class="hero-panel reveal">
                 <div class="metric-tile">
-                    <strong>10+</strong>
-                    <span>analytics projects</span>
+                    <strong>Gofo</strong>
+                    <span>station operations specialist</span>
                 </div>
                 <div class="metric-tile">
-                    <strong>6</strong>
-                    <span>core data tools</span>
+                    <strong>10+</strong>
+                    <span>analytics and operations projects</span>
                 </div>
                 <div class="metric-tile">
                     <strong>2026</strong>
@@ -63,16 +75,33 @@
             <div class="section-shell split-layout reveal">
                 <div>
                     <p class="eyebrow">About</p>
-                    <h2><span class="i18n-en">Turning messy data into usable decisions.</span><span class="i18n-zh">将复杂数据转化为可执行决策。</span></h2>
+                    <h2><span class="i18n-en">Turning operational complexity into usable decisions.</span><span class="i18n-zh">将复杂运营问题转化为可执行决策。</span></h2>
                 </div>
                 <div class="about-copy">
                     <p class="i18n-en">
-                        I am a data scientist with hands-on experience in Python, SQL, Snowflake, machine learning, GIS, and visual analytics.
-                        My work spans energy systems, public safety, financial operations, and interactive dashboards, with an emphasis on clear analytical reasoning and practical outputs.
+                        I am a Station Operations Specialist at Gofo with hands-on experience in Python, SQL, Snowflake, machine learning, GIS, and visual analytics.
+                        My work connects day-to-day station operations with analytical thinking, spanning logistics workflows, energy systems, public safety, financial operations, and interactive dashboards.
                     </p>
                     <p class="i18n-zh">
-                        我具备 Python、SQL、Snowflake、机器学习、GIS 与可视分析实践经验，项目覆盖能源系统、公共安全、金融运营和交互式仪表盘，注重清晰分析与可落地成果。
+                        我目前在 Gofo 担任站点运营专员，具备 Python、SQL、Snowflake、机器学习、GIS 与可视分析实践经验。我的工作连接一线站点运营与数据分析思维，项目覆盖物流流程、能源系统、公共安全、金融运营和交互式仪表盘。
                     </p>
+                </div>
+                <div class="focus-grid">
+                    <article class="focus-card">
+                        <span>01</span>
+                        <h3><span class="i18n-en">Operations Execution</span><span class="i18n-zh">运营执行</span></h3>
+                        <p><span class="i18n-en">Current Gofo station work grounds my analytics in real operational constraints, handoffs, and daily performance needs.</span><span class="i18n-zh">Gofo 站点工作让我从真实运营约束、交接流程与日常绩效需求出发做分析。</span></p>
+                    </article>
+                    <article class="focus-card">
+                        <span>02</span>
+                        <h3><span class="i18n-en">Decision Analytics</span><span class="i18n-zh">决策分析</span></h3>
+                        <p><span class="i18n-en">Projects translate models, spatial data, and dashboards into recommendations people can act on.</span><span class="i18n-zh">项目将模型、空间数据与仪表盘转化为可以行动的建议。</span></p>
+                    </article>
+                    <article class="focus-card">
+                        <span>03</span>
+                        <h3><span class="i18n-en">Technical Stack</span><span class="i18n-zh">技术栈</span></h3>
+                        <p><span class="i18n-en">Python, SQL, Snowflake, Tableau, GIS, machine learning, and AI apps for analysis and workflow support.</span><span class="i18n-zh">使用 Python、SQL、Snowflake、Tableau、GIS、机器学习与 AI 应用支持分析和流程优化。</span></p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -86,13 +115,13 @@
                 <div class="featured-grid">
                     <article class="featured-card project-card reveal">
                         <a class="project-media" href="https://storymaps.arcgis.com/stories/ff8e06d9c0394d2d8305b3755ee1cca7" target="_blank" rel="noopener">
-                            <img src="images/project-wind.jpg" alt="Mapping Suitable Onshore Wind Farm Locations in Essex County preview">
+                            <img src="images/project-wind.jpg" alt="Mapping Suitable Onshore Wind Farm Locations in Essex County preview" loading="lazy" decoding="async">
                             <span class="preview-chip">Spatial model</span>
                         </a>
                         <div class="project-body">
                             <p class="date">Dec. 2025</p>
                             <h3>Mapping Suitable Onshore Wind Farm Locations in Essex County</h3>
-                            <p>Mapped candidate wind farm locations by combining spatial constraints, suitability modeling, and clear story-map communication.</p>
+                            <p>Mapped candidate wind farm locations by combining spatial constraints, suitability modeling, and clear story-map communication for planning review.</p>
                             <div class="case-grid">
                                 <span><strong>Problem</strong> Site selection needs defensible spatial tradeoffs.</span>
                                 <span><strong>Approach</strong> Weighted GIS suitability layers and map storytelling.</span>
@@ -104,13 +133,13 @@
 
                     <article class="featured-card project-card reveal">
                         <a class="project-media" href="iasc2025-poster1.pdf" target="_blank" rel="noopener">
-                            <img src="images/project-firescape.jpg" alt="FireScape project visual preview">
+                            <img src="images/project-firescape.jpg" alt="FireScape project visual preview" loading="lazy" decoding="async">
                             <span class="preview-chip">Urban resilience</span>
                         </a>
                         <div class="project-body">
                             <p class="date">April - June 2025</p>
                             <h3>FireScape</h3>
-                            <p>Built a data-driven recommendation workflow for fire-resilient tree planting in Los Angeles.</p>
+                            <p>Built a data-driven recommendation workflow for fire-resilient tree planting in Los Angeles, connecting risk data to practical urban design choices.</p>
                             <div class="case-grid">
                                 <span><strong>Problem</strong> Wildfire risk makes tree selection more complex.</span>
                                 <span><strong>Approach</strong> Joined environmental, species, and suitability signals.</span>
@@ -132,13 +161,13 @@
                 <div class="projects-grid">
                     <article class="project-card reveal">
                         <a class="project-media" href="https://github.com/xluo06/GreenH2/blob/main/Policy_Memo.pdf" target="_blank" rel="noopener">
-                            <img src="images/project-energy.jpg" alt="Energy curtailment analysis preview">
+                            <img src="images/project-energy.jpg" alt="Energy curtailment analysis preview" loading="lazy" decoding="async">
                             <span class="preview-chip">Regression</span>
                         </a>
                         <div class="project-body">
                             <p class="date">Nov. 2025</p>
                             <h3>Energy Curtailment Analysis</h3>
-                            <p>Modeled curtailment patterns to clarify renewable energy grid integration tradeoffs.</p>
+                            <p>Modeled curtailment patterns to clarify renewable energy grid integration tradeoffs and support policy-ready analysis.</p>
                             <div class="impact-row"><span>Result</span><strong>Policy memo-ready insights</strong></div>
                             <div class="tag-row"><span>Regression</span><span>Python</span><span>Energy</span></div>
                         </div>
@@ -146,13 +175,13 @@
 
                     <article class="project-card reveal">
                         <a class="project-media" href="https://github.com/jordanzhuy/cs178-final-VAST2021/tree/main" target="_blank" rel="noopener">
-                            <img src="images/project-bias.jpg" alt="News bias detection project preview">
+                            <img src="images/project-bias.jpg" alt="News bias detection project preview" loading="lazy" decoding="async">
                             <span class="preview-chip">NLP</span>
                         </a>
                         <div class="project-body">
                             <p class="date">April - May 2025</p>
                             <h3>News Bias Detection System</h3>
-                            <p>Designed an NLP workflow to detect and compare bias signals across article text.</p>
+                            <p>Designed an NLP workflow to detect and compare bias signals across article text for more transparent content review.</p>
                             <div class="impact-row"><span>Result</span><strong>Bias patterns surfaced for review</strong></div>
                             <div class="tag-row"><span>NLP</span><span>Machine Learning</span><span>Python</span></div>
                         </div>
@@ -160,13 +189,13 @@
 
                     <article class="project-card reveal">
                         <a class="project-media" href="https://github.com/Daisyxjh-06/cs178_mid" target="_blank" rel="noopener">
-                            <img src="images/project-student.jpg" alt="Student placement analytics preview">
+                            <img src="images/project-student.jpg" alt="Student placement analytics preview" loading="lazy" decoding="async">
                             <span class="preview-chip">Dashboard</span>
                         </a>
                         <div class="project-body">
                             <p class="date">Feb - March 2025</p>
                             <h3>Student Placement Analysis</h3>
-                            <p>Created an interactive system for predicting and visualizing student placement outcomes.</p>
+                            <p>Created an interactive system for predicting and visualizing student placement outcomes so users could compare drivers quickly.</p>
                             <div class="impact-row"><span>Result</span><strong>Placement outcomes made explorable</strong></div>
                             <div class="tag-row"><span>Visualization</span><span>Modeling</span><span>UX</span></div>
                         </div>
@@ -174,7 +203,7 @@
 
                     <article class="project-card reveal">
                         <a class="project-media" href="https://shotmarilyns.gd.edu.kg/?_gl=1*11o5fu8*_ga*OTY1NTkwMjY2LjE3NDQzODk0Njc.*_ga_ELSZ3SFQ2D*czE3NDY4MTAwOTEkbzEwJGcxJHQxNzQ2ODEzMTUwJGowJGwwJGgw" target="_blank" rel="noopener">
-                            <img src="images/project-marilyn.jpg" alt="Shot Marilyns visual analytics preview">
+                            <img src="images/project-marilyn.jpg" alt="Shot Marilyns visual analytics preview" loading="lazy" decoding="async">
                             <span class="preview-chip">Visual study</span>
                         </a>
                         <div class="project-body">
@@ -188,7 +217,7 @@
 
                     <article class="project-card reveal">
                         <a class="project-media" href="https://github.com/xluo06/heart-stroke-risk-analysis/blob/main/Report.pdf" target="_blank" rel="noopener">
-                            <img src="images/project-heart.jpg" alt="Heart disease analysis preview">
+                            <img src="images/project-heart.jpg" alt="Heart disease analysis preview" loading="lazy" decoding="async">
                             <span class="preview-chip">Statistics</span>
                         </a>
                         <div class="project-body">
@@ -202,7 +231,7 @@
 
                     <article class="project-card reveal">
                         <a class="project-media" href="https://github.com/xluo06/Logistic-Regression-Optimization/blob/main/Report.pdf" target="_blank" rel="noopener">
-                            <img src="images/project-logistic.jpg" alt="Logistic regression optimization preview">
+                            <img src="images/project-logistic.jpg" alt="Logistic regression optimization preview" loading="lazy" decoding="async">
                             <span class="preview-chip">Modeling</span>
                         </a>
                         <div class="project-body">
@@ -221,9 +250,14 @@
             <div class="section-shell">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Timeline</p>
-                    <h2><span class="i18n-en">Education, internships, research, and leadership in one arc.</span><span class="i18n-zh">教育、实习、研究与领导经历时间线。</span></h2>
+                    <h2><span class="i18n-en">Operations, education, internships, research, and leadership in one arc.</span><span class="i18n-zh">运营、教育、实习、研究与领导经历时间线。</span></h2>
                 </div>
                 <div class="story-timeline">
+                    <article class="story-item reveal">
+                        <span class="story-date">2026 - Present</span>
+                        <h3>Gofo</h3>
+                        <p>Station Operations Specialist supporting site execution, daily coordination, and operations improvement with a data-informed mindset.</p>
+                    </article>
                     <article class="story-item reveal">
                         <span class="story-date">2025 - 2026</span>
                         <h3>Peti</h3>
@@ -270,12 +304,26 @@
                     <h2><span class="i18n-en">Tools I use to move from data to decision.</span><span class="i18n-zh">从数据到决策的工具栈。</span></h2>
                 </div>
                 <div class="skills-container reveal">
-                    <div class="skill-item"><img src="images/python-logo.png" alt="Python"><p>Python</p></div>
-                    <div class="skill-item"><img src="images/snowflake-logo.svg" alt="Snowflake"><p>Snowflake</p></div>
-                    <div class="skill-item"><img src="images/sql-logo.png" alt="SQL"><p>SQL</p></div>
-                    <div class="skill-item"><img src="images/tableau-logo.png" alt="Tableau"><p>Tableau</p></div>
-                    <div class="skill-item"><img src="images/machine-learning-logo.png" alt="Machine Learning"><p>Machine Learning</p></div>
-                    <div class="skill-item"><img src="images/gis.jpg" alt="ArcGIS Pro"><p>ArcGIS Pro</p></div>
+                    <div class="skill-item"><img src="images/python-logo.png" alt="Python" loading="lazy" decoding="async"><p>Python</p></div>
+                    <div class="skill-item"><img src="images/snowflake-logo.svg" alt="Snowflake" loading="lazy" decoding="async"><p>Snowflake</p></div>
+                    <div class="skill-item"><img src="images/sql-logo.png" alt="SQL" loading="lazy" decoding="async"><p>SQL</p></div>
+                    <div class="skill-item"><img src="images/tableau-logo.png" alt="Tableau" loading="lazy" decoding="async"><p>Tableau</p></div>
+                    <div class="skill-item"><img src="images/machine-learning-logo.png" alt="Machine Learning" loading="lazy" decoding="async"><p>Machine Learning</p></div>
+                    <div class="skill-item"><img src="images/gis.jpg" alt="ArcGIS Pro" loading="lazy" decoding="async"><p>ArcGIS Pro</p></div>
+                    <div class="skill-item ai-skill"><span class="skill-mark" aria-hidden="true">AI</span><p>AI Apps</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-band accent-band">
+            <div class="section-shell contact-panel reveal">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2><span class="i18n-en">Ready for operations, analytics, and data science conversations.</span><span class="i18n-zh">欢迎交流运营、分析与数据科学机会。</span></h2>
+                </div>
+                <div class="contact-actions">
+                    <a href="Xinhui_Resume_DS.pdf" class="btn dark-action magnetic" download><span class="i18n-en">Download Resume</span><span class="i18n-zh">下载简历</span></a>
+                    <a href="https://github.com/xluo06" class="btn outline-action magnetic" target="_blank" rel="noopener"><span class="i18n-en">View GitHub</span><span class="i18n-zh">查看 GitHub</span></a>
                 </div>
             </div>
         </section>
@@ -308,7 +356,7 @@
                 } else {
                     html.classList.add('site-lang-en');
                     html.setAttribute('lang', 'en');
-                    document.title = 'Portfolio - Xinhui Luo';
+                    document.title = 'Xinhui Luo | Operations Analytics Portfolio';
                     langButton.textContent = '中文';
                     langButton.setAttribute('aria-label', 'Switch to Chinese');
                 }
